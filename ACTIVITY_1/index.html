@@ -3,11 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sports Poster</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+
+        .poster {
+            width: 100%;
+            height: 100vh;
+            background-image: url('https://via.placeholder.com/1200x800'); /* Replace with your sports image */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 60px;
+            font-weight: bold;
+            margin: 0;
+            padding: 20px;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
+        }
+
+        .content {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 900px;
+            margin-top: 30px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 40px;
+            text-decoration: underline;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+            font-size: 18px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .closing {
+            font-size: 20px;
+            font-weight: normal;
+            margin-top: 30px;
+            font-style: italic;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello world!</h1>
-    <h1>i am jhaja</h1>
-    <h1>student</h1>
+
+<div class="poster">
+    <h1>Feel the Rush of Sports</h1>
+
+    <div class="content">
+        <p>Sports are more than just games. They're a celebration of human strength, perseverance, and teamwork. Whether you're a fan or a player, sports bring people together and create unforgettable experiences.</p>
+
+        <p>From the thrill of the crowd to the personal challenges athletes face, sports are an essential part of our culture. They help build character, foster discipline, and teach valuable life lessons.</p>
+
+        <h2>Fun Facts About Sports</h2>
+        <ul>
+            <li>Sports can boost mental health by reducing stress and anxiety.</li>
+            <li>The Olympic Games have been held every four years since 1896 (except during WWI and WWII).</li>
+            <li>Football (Soccer) is the most popular sport worldwide, with an estimated 4 billion fans.</li>
+            <li>Running is one of the oldest and simplest forms of exercise, dating back to the dawn of humanity.</li>
+            <li>Basketball was invented by Dr. James Naismith in 1891 as a way to keep his students active during winter.</li>
+        </ul>
+
+        <p class="closing">No matter the sport, the energy, the teamwork, and the competition inspire us all to be better. So, get out there and play – the world is waiting for you!</p>
+    </div>
+</div>
+
 </body>
 </html>
