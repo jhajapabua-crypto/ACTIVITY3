@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Playable Game Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #f0f4ff;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      color: #333;
+    }
+    #gameBox {
+      margin: 20px auto;
+      width: 200px;
+      height: 200px;
+      background: #fff;
+      border: 3px solid #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+      cursor: pointer;
+      user-select: none;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎮 Simple Click Game</h1>
+  <p>Click the box as fast as you can! Every click adds 1 point.</p>
+
+  <h2>Score: <span id="score">0</span></h2>
+
+  <div id="gameBox">Click!</div>
+
+  <button onclick="resetGame()">Reset Game</button>
+
+  <script>
+    let score = 0;
+
+    document.getElementById("gameBox").addEventListener("click", function() {
+      score++;
+      document.getElementById("score").innerText = score;
+    });
+
+    function resetGame() {
+      score = 0;
+      document.getElementById("score").innerText = score;
+    }
+  </script>
+
+</body>
+</html>
